@@ -15,7 +15,7 @@ Antes de executar a aplicação, certifique-se de ter instalado:
 No terminal, navegue até o diretório `automanager` e execute:
 
 ```bash
-cd atvii-autobots-microservico-spring/automanager
+cd atii-autobots/automanager
 mvn spring-boot:run
 ```
 
@@ -23,13 +23,13 @@ mvn spring-boot:run
 
 **Windows (PowerShell/CMD):**
 ```bash
-cd atvii-autobots-microservico-spring/automanager
+cd atii-autobots/automanager
 .\mvnw.cmd spring-boot:run
 ```
 
 **Linux/Mac:**
 ```bash
-cd atvii-autobots-microservico-spring/automanager
+cd atii-autobots/automanager
 ./mvnw spring-boot:run
 ```
 
@@ -42,7 +42,7 @@ cd atvii-autobots-microservico-spring/automanager
 ### 📋 Opção 4: Compilando e executando o JAR
 
 ```bash
-cd atvii-autobots-microservico-spring/automanager
+cd atii-autobots/automanager
 ./mvnw clean package
 java -jar target/automanager-0.0.1-SNAPSHOT.jar
 ```
