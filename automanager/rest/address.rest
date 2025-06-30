@@ -1,0 +1,43 @@
+### Create Address
+POST http://localhost:8080/address/register
+Content-Type: application/json
+
+{
+  "customerId": 1,
+  "address": {
+    "state": "SP",
+    "city": "São Paulo",
+    "district": "Centro",
+    "street": "Rua das Flores",
+    "number": "123",
+    "postalCode": "01001-000",
+    "additionalInfo": "Apartamento 45"
+  }
+}
+
+
+### List All Addresses
+GET http://localhost:8080/address
+
+### Get Address by ID
+GET http://localhost:8080/address/1
+
+### Update Address
+PUT http://localhost:8080/address/1
+Content-Type: application/json
+
+{
+  "customerId": 1,
+  "address": {
+    "state": "RJ",
+    "city": "Rio de Janeiro",
+    "district": "Centro",
+    "street": "Rua das Copas",
+    "number": "345",
+    "postalCode": "01231-000",
+    "additionalInfo": "Apartamento 43"
+  }
+}
+
+### Delete Address
+DELETE http://localhost:8080/address/2

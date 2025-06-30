@@ -1,0 +1,55 @@
+### Create Customer
+POST http://localhost:8080/customer/register
+Content-Type: application/json
+
+{
+  "name": "João Silva",
+  "socialName": "João da Silva",
+  "birthDate": "1990-05-20T00:00:00Z",
+  "createdAt": "2024-06-30T00:00:00Z",
+  "documents": [
+    {
+      "type": "RG",
+      "number": "123456789"
+    }
+  ],
+  "address": {
+    "state": "SP",
+    "city": "São Paulo",
+    "district": "Centro",
+    "street": "Rua X",
+    "number": "10",
+    "postalCode": "01001-000",
+    "additionalInfo": "Casa"
+  },
+  "phones": [
+    {
+      "ddd": "11",
+      "number": "91234-5678"
+    }
+  ]
+}
+
+### List All Customers
+GET http://localhost:8080/customer
+
+### Get Customer by ID
+GET http://localhost:8080/customer/1
+
+### Update Customer
+PUT http://localhost:8080/customer/1
+Content-Type: application/json
+
+{
+  "id": 2,
+  "name": "João Atualizado",
+  "socialName": "João Atual",
+  "birthDate": "1991-01-01T00:00:00Z",
+  "createdAt": "2024-07-01T00:00:00Z",
+  "documents": [],
+  "address": null,
+  "phones": []
+}
+
+### Delete Customer
+DELETE http://localhost:8080/customer/2

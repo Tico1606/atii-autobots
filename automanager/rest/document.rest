@@ -1,0 +1,32 @@
+### Create Identity Document
+POST http://localhost:8080/document/register
+Content-Type: application/json
+
+{
+  "customerId": 1,
+  "document": {
+    "type": "CPF",
+    "number": "12345678900"
+  }
+}
+
+### List All Documents
+GET http://localhost:8080/document
+
+### Get Document by ID
+GET http://localhost:8080/document/1
+
+### Update Document
+PUT http://localhost:8080/document/1
+Content-Type: application/json
+
+{
+  "customerId": 1,
+  "document": {
+    "type": "CPF",
+    "number": "45675678900"
+  }
+}
+
+### Delete Document
+DELETE http://localhost:8080/document/4

@@ -1,0 +1,32 @@
+### Create Phone Number
+POST http://localhost:8080/phone/register
+Content-Type: application/json
+
+{
+  "customerId": 1,
+  "phone": {
+    "ddd": "11",
+    "number": "91234-5678"
+  }
+}
+
+### List All Phone Numbers
+GET http://localhost:8080/phone
+
+### Get Phone Number by ID
+GET http://localhost:8080/phone/1
+
+### Update Phone Number
+PUT http://localhost:8080/phone/1
+Content-Type: application/json
+
+{
+  "customerId": 1,
+  "phone": {
+    "ddd": "21",
+    "number": "45678-5678"
+  }
+}
+
+### Delete Phone Number
+DELETE http://localhost:8080/phone/1
